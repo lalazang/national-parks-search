@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>National Parks Search</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1>Search for National Parks</h1>
+        <p>Please type in a state abbreviation to search for National Parks. ex: Alabama = AL</p>
+        <p>If searching for multiple states, separate searches with a comma. ex: Al, AK, AZ</p>
+
+        <form>
+            <label for="searchArea">Search Area</label>
+            <input type="text" name="searchArea" id="searchArea" required>
+            <label for="maxResults">Maximum results to return</label>
+            <input type="number" name="maxResults" id="js-maxResults" value="10">
+            <input type="submit" value="Submit">
+        </form>
+
+        <p id="errorMessage"></p>
+
+        <section id="results">
+            <div id="resultHeader"></div>
+            <ul id="resultsList"></ul>
+        </section>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
